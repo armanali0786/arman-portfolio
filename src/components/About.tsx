@@ -58,6 +58,13 @@ export function About() {
           >
             <Github size={20} className="text-slate-300" />
           </a>
+          <a href="https://drive.google.com/file/d/14wELUJubutsX3IZ6ctDiQa7x6wJNqUWB/view?usp=sharing" className="inline-block" target='_blank'>
+            <button
+              className="px-5 py-2 bg-red-600 hover:bg-red-700 rounded-full transition-colors cursor-pointer"
+            >
+              Download CV
+            </button>
+          </a>
 
         </div>
       </div>
