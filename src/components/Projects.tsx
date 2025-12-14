@@ -1,19 +1,77 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, X } from 'lucide-react';
+import { useState } from 'react';
+import Slider from 'react-slick';
+import SolarPanelImage1 from '../styles/solar-panel/image1.jpg';
+import SolarPanelImage2 from '../styles/solar-panel/image2.jpg';
+import SolarPanelImage3 from '../styles/solar-panel/image3.jpg';
+import SolarPanelImage4 from '../styles/solar-panel/image4.jpg';
+import SolarPanelImage5 from '../styles/solar-panel/image5.jpg';
+import SolarPanelImage6 from '../styles/solar-panel/image6.jpg';
+
+import ChromeExtensionImage3 from '../styles/chrome-extension/image3.png';
+import ChromeExtensionImage4 from '../styles/chrome-extension/image4.png';
+import ChromeExtensionImage5 from '../styles/chrome-extension/image5.png';
+
+import DeliveryPointImage1 from '../styles/delivery-point/image1.png';
+import DeliveryPointImage2 from '../styles/delivery-point/image2.png';
+import DeliveryPointImage3 from '../styles/delivery-point/image3.png';
+import DeliveryPointImage4 from '../styles/delivery-point/image4.png';
+import DeliveryPointImage5 from '../styles/delivery-point/image5.png';
+import DeliveryPointImage6 from '../styles/delivery-point/image6.png';
+import DeliveryPointImage7 from '../styles/delivery-point/image7.png';
+import DeliveryPointImage8 from '../styles/delivery-point/image8.png';
+import DeliveryPointImage9 from '../styles/delivery-point/image9.png';
+import DeliveryPointImage10 from '../styles/delivery-point/image10.png';
+import DeliveryPointImage11 from '../styles/delivery-point/image11.png';
+import DeliveryPointImage12 from '../styles/delivery-point/image12.png';
+
+import HomecareImage1 from '../styles/homecare/image1.png';
+import HomecareImage2 from '../styles/homecare/image2.png';
+import HomecareImage3 from '../styles/homecare/image3.png';
+import HomecareImage4 from '../styles/homecare/image4.png';
+import HomecareImage5 from '../styles/homecare/image5.png';
+import HomecareImage6 from '../styles/homecare/image6.png';
+
+import liveImage1 from '../styles/405live/image1.png';
+import liveImage2 from '../styles/405live/image2.png';
+
+import EnglishImage1 from '../styles/english/image1.png';
+import EnglishImage2 from '../styles/english/image2.png';
+import EnglishImage3 from '../styles/english/image3.png';
+import EnglishImage4 from '../styles/english/image4.png';
+import EnglishImage5 from '../styles/english/image5.png';
+import EnglishImage6 from '../styles/english/image6.png';
+
 
 export function Projects() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+
   const projects = [
     {
       title: 'Solar Panel Installation',
       description: 'Developed a 3D map rendering, using Three.js to create location-based house models with roof structures, enabling solar panel installation, placement, and energy output calculations.',
-      image: 'https://images.unsplash.com/photo-1687524690542-2659f268cde8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDF8fHx8MTc2NTU1MjI4Nnww&ixlib=rb-4.1.0&q=80&w=1080',
       tags: ['React.js', 'Javascript', 'Typescript', 'Three.js', 'GoogleApi'],
       github: '#',
-      live: '#'
+      live: '#',
+      images: [
+        SolarPanelImage1,
+        SolarPanelImage2,
+        SolarPanelImage3,
+        SolarPanelImage4,
+        SolarPanelImage5,
+        SolarPanelImage6,
+      ],
     },
     {
       title: 'LinkedIn Profile Review Extension',
       description: 'Developed a Chrome extension web application integrating LinkedIn API for user authentication, profile reviews with ratings, and market insights visualization.',
-      image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzY1NjE0MTk4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      images: [
+        ChromeExtensionImage3,
+        ChromeExtensionImage4,
+        ChromeExtensionImage5,
+      ],
       tags: ['React.js', 'Javascript', 'TypeScript', 'Redux', 'Chrome extension'],
       github: '#',
       live: '#'
@@ -21,7 +79,14 @@ export function Projects() {
     {
       title: 'HomeCare360',
       description: 'A one-stop platform for finding, booking, and reviewing local service providers like plumbers, electricians, cleaners, landscapers, and more.',
-      image: 'https://images.unsplash.com/photo-1759752394755-1241472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1NjUxNTA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      images: [
+        HomecareImage1,
+        HomecareImage2,
+        HomecareImage3,
+        HomecareImage4,
+        HomecareImage5,
+        HomecareImage6,
+      ],
       tags: ['React.js', 'Javascript', 'Typescript', 'Node.js', 'ExpressJs', 'MongoDB'],
       github: 'https://github.com/armanali0786/homecare360',
       live: 'https://homecare360.netlify.app'
@@ -29,7 +94,20 @@ export function Projects() {
     {
       title: 'DeliveryPoint',
       description: 'Design and developed websites features such as food listing with quick delivery options within 30 minutes, showcasing top-rated restaurants, and enabling robust search capabilities for food items and restaurants.',
-      image: 'https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc2NTY0Njk2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+      images: [
+        DeliveryPointImage1,
+        DeliveryPointImage2,
+        DeliveryPointImage3,
+        DeliveryPointImage4,
+        DeliveryPointImage5,
+        DeliveryPointImage6,
+        DeliveryPointImage7,
+        DeliveryPointImage8,
+        DeliveryPointImage9,
+        DeliveryPointImage10,
+        DeliveryPointImage11,
+        DeliveryPointImage12,
+      ],
       tags: ['React.js', 'Javascript', 'Typescript', 'Node.js', 'ExpressJs', 'MongoDB', 'Stripe', 'Google DialogFlow'],
       github: 'https://github.com/armanali0786/delivery-point.git',
       live: 'https://delivery-point.netlify.app'
@@ -37,7 +115,10 @@ export function Projects() {
     {
       title: '405Live',
       description: 'Developed a user-friendly platform for accessing information on upcoming events, including event details, venue information, and event locations, user authentication and advanced search functionality, events, filtered events,venues events, favourites. ',
-      image: 'https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc2NTY0Njk2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+      images: [
+        liveImage1,
+        liveImage2,
+      ],
       tags: ['React.js', 'Javascript', 'Typescript'],
       github: '#',
       live: 'https://405live.com'
@@ -45,12 +126,44 @@ export function Projects() {
     {
       title: 'Expert English Spoken',
       description: 'Developed a user-friendly English spoken coaching website, offering interactive lessons, personalized learning paths, and real-time feedback.',
-      image: 'https://images.unsplash.com/photo-1759752394755-1241472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1NjUxNTA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      images: [
+        EnglishImage1,
+        EnglishImage2,
+        EnglishImage3,
+        EnglishImage4,
+        EnglishImage5,
+        EnglishImage6
+      ],
       tags: ['React.js', 'Javascript', 'Typescript'],
       github: 'https://github.com/armanali0786/expert-english-spoken.git',
       live: '#'
     },
   ];
+
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // Slick settings
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <button className="slick-prev">❮</button>,
+    nextArrow: <button className="slick-next">❯</button>,
+  };
+
 
   return (
     <section id="projects" className="py-20 px-6">
@@ -64,28 +177,29 @@ export function Projects() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
-              className="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-red-500 transition-all"
+              onClick={() => openModal(project)}
+              className="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden hover:border-red-500 transition-all cursor-pointer"
             >
               <div className="relative h-64 overflow-hidden bg-slate-900">
-                <img 
-                  src={project.image}
+                <img
+                  src={project.images[0]}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60" />
               </div>
-              
+
               <div className="p-6">
                 <h3 className="mb-3">{project.title}</h3>
                 <p className="text-slate-400 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (
-                    <span 
+                    <span
                       key={i}
                       className="px-3 py-1 bg-slate-900 text-slate-300 rounded-full text-sm"
                     >
@@ -95,16 +209,19 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-4">
-                  <a 
+                  {/* <a
                     href={project.github}
+                    target='_blank'
+                    onClick={(e) => e.stopPropagation()}
                     className="flex items-center gap-2 text-slate-300 hover:text-red-500 transition-colors text-sm"
                   >
                     <Github size={18} />
                     Code
-                  </a>
-                  <a 
+                  </a> */}
+                  <a
                     href={project.live}
                     target='_blank'
+                    onClick={(e) => e.stopPropagation()}
                     className="flex items-center gap-2 text-slate-300 hover:text-red-500 transition-colors text-sm"
                   >
                     <ExternalLink size={18} />
@@ -116,6 +233,42 @@ export function Projects() {
           ))}
         </div>
       </div>
+      {isModalOpen && selectedProject && (
+        <div
+          className="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-sm flex items-center justify-center p-6"
+          onClick={closeModal}
+
+        >
+          <button
+            className="absolute top-6 right-6 w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 transition-colors"
+            onClick={closeModal}
+
+          >
+            <X size={20} className="text-white" />
+          </button>
+
+          <div
+            className="max-w-5xl w-full bg-slate-800 border border-slate-700 rounded-xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Slider {...sliderSettings}>
+              {selectedProject?.images.map((image, index) => (
+                <div key={index}>
+                  <img
+                    src={image}
+                    alt={`Project Image ${index + 1}`}
+                    className="w-full object-cover h-80 rounded-lg"
+                  />
+                </div>
+              ))}
+            </Slider>
+            <div className="p-6">
+              <h3 className="mb-2">{selectedProject?.title}</h3>
+            </div>
+          </div>
+        </div>
+      )}
+
     </section>
   );
 }

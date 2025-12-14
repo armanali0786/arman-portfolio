@@ -59,7 +59,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-400 mb-1">Location</p>
-                  <p className="text-slate-300">Indira Nagar, Bengaluru , Karnatak</p>
+                  <p className="text-slate-300">Indira Nagar, Bengaluru , Karnataka</p>
                 </div>
               </div>
             </div>
