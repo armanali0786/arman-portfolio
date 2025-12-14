@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-400 text-sm flex items-center gap-2">
-            © 2025 Jonathan Doe. Made with <Heart size={16} className="text-red-500 fill-red-500" /> and code
+            © 2025 Arman Ali. Made with <Heart size={16} className="text-red-500 fill-red-500" /> and code
           </p>
           <div className="flex gap-6">
             <button 

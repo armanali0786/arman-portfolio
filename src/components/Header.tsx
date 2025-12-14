@@ -17,7 +17,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-white mb-1">Jonathan Doe</h1>
+            <h1 className="text-white mb-1 text-4xl font-bold">Arman Ali</h1>
             <p className="text-sm text-slate-400">Software Developer | Full Stack Developer | Problem Solver</p>
           </div>
 
@@ -41,8 +41,8 @@ export function Header() {
             <button onClick={() => scrollToSection('gallery')} className="text-slate-300 hover:text-white transition-colors">
               Gallery
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')} 
+            <button
+              onClick={() => scrollToSection('contact')}
               className="px-5 py-2 bg-red-600 hover:bg-red-700 rounded-full transition-colors"
             >
               Contact
@@ -50,7 +50,7 @@ export function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -79,8 +79,8 @@ export function Header() {
             <button onClick={() => scrollToSection('gallery')} className="text-slate-300 hover:text-white transition-colors text-left">
               Gallery
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')} 
+            <button
+              onClick={() => scrollToSection('contact')}
               className="px-5 py-2 bg-red-600 hover:bg-red-700 rounded-full transition-colors text-left"
             >
               Contact

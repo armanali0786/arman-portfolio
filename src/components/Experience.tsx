@@ -3,35 +3,44 @@ import { Briefcase } from 'lucide-react';
 export function Experience() {
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      period: '2022 - Present',
-      description: 'Leading the development of enterprise web applications using React, Node.js, and AWS. Mentoring junior developers and conducting code reviews.',
+      title: 'Data Engineer',
+      company: 'Evolvus Solution Pvt Ltd.',
+      period: 'Sep 2025 - Present',
+      description: 'Leading the development of enterprise web applications using React.js, Typescript, Javascript.',
       achievements: [
-        'Architected and deployed scalable microservices handling 1M+ requests daily',
-        'Reduced application load time by 60% through optimization',
-        'Mentored 5+ junior developers and led team of 8 engineers'
+        'Developed an AI-driven secure data archival platform for finance and manufacturing sectors.',
+        'Ensured compliance, efficient retrieval, and cost reduction through advanced archival solutions.',
+        'Leveraged AI to streamline data storage and lower operational costs in regulated industries.'
       ]
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Digital Innovations Ltd.',
-      period: '2020 - 2022',
+      title: 'Frontend Developer',
+      company: 'Cipher Craft Pvt Ltd.',
+      period: 'Sep 2024 - Sep 2025',
       description: 'Developed and maintained multiple client-facing web applications. Collaborated with designers and product managers to deliver high-quality solutions.',
       achievements: [
-        'Built 15+ responsive web applications from scratch',
-        'Implemented CI/CD pipeline reducing deployment time by 40%',
-        'Introduced TypeScript improving code quality and maintainability'
+        'Developed a Chrome extension integrating LinkedIn API for user authentication, profile reviews, and market insights visualization.',
+        'Implemented a 3D map rendering with Three.js to display location-based house models.',
+        'Facilitated solar panel installation and energy calculations through interactive 3D models.'
       ]
     },
     {
-      title: 'Junior Web Developer',
-      company: 'Startup Hub',
-      period: '2019 - 2020',
+      title: 'Web Developer',
+      company: '9Brainz',
+      period: 'July 2023 - July 2024',
       description: 'Worked on front-end development using React and Vue.js. Contributed to building user interfaces and implementing new features.',
       achievements: [
-        'Developed reusable component library used across 10+ projects',
-        'Improved website accessibility to meet WCAG 2.1 standards',
+        'Created a REST API and user interface using standard React.js, Node.js, Express, and MongoDB practices for a scalable and maintainable application.',
+        'Collaborated with cross-functional teams in agile environment'
+      ]
+    },
+    {
+      title: 'Software Developer (Intern)',
+      company: 'Technomark Solutions LLP',
+      period: 'Jan 2023 - July 2023',
+      description: 'Worked on front-end development using React and Vue.js. Contributed to building user interfaces and implementing new features.',
+      achievements: [
+        'Created a REST API and user interface using standard React.js, Node.js, Express, and MongoDB practices for a scalable and maintainable application.',
         'Collaborated with cross-functional teams in agile environment'
       ]
     }

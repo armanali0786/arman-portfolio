@@ -1,5 +1,15 @@
 import { Play, X, Image as ImageIcon } from 'lucide-react';
 import { useState } from 'react';
+import Summit from '../styles/images/summit.jpeg';
+import Video1 from '../styles/images/video1.mp4';
+import Video2 from '../styles/images/video2.mp4';
+import Setup from '../styles/images/self2.jpeg';
+import Dev1 from '../styles/images/dev1.jpeg';
+import Dev2 from '../styles/images/dev2.jpeg';
+import Thumbnail1 from '../styles/images/thumbnail1.jpeg';
+import Thumbnail2 from '../styles/images/thumbnail2.jpeg';
+
+
 
 interface GalleryItem {
   type: 'image' | 'video';
@@ -15,39 +25,39 @@ export function Gallery() {
   const galleryItems: GalleryItem[] = [
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1559223694-98ed5e272fef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwc3BlYWtpbmclMjBwcmVzZW50YXRpb258ZW58MXx8fHwxNzY1Njk1MzkzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Tech Conference 2024',
+      src: Summit,
+      title: 'Tech Meetup 2024',
       description: 'Speaking at the Annual Web Development Summit'
     },
     {
       type: 'video',
-      src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      thumbnail: 'https://images.unsplash.com/photo-1603575448360-153f093fd0b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBjb2RpbmclMjBsYXB0b3B8ZW58MXx8fHwxNzY1NjI0MTQ4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Coding Tutorial: React Hooks',
-      description: 'Complete guide to mastering React Hooks'
+      src: Video1,
+      thumbnail:Thumbnail1,
+      title: 'Tech Visits',
+      description: 'Complete guide to mastering Software Engineering Fields'
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2UlMjBzZXR1cHxlbnwxfHx8fDE3NjU2MTI4Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      src: Setup,
       title: 'My Workspace Setup',
       description: 'A peek into my daily development environment'
     },
     {
       type: 'video',
-      src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      thumbnail: 'https://images.unsplash.com/photo-1646579886135-068c73800308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b3Jrc2hvcCUyMHRlYWNoaW5nJTIwY29kaW5nfGVufDF8fHx8MTc2NTY5NTM5NHww&ixlib=rb-4.1.0&q=80&w=1080',
+      src: Video2,
+      thumbnail: Thumbnail2,
       title: 'Workshop: Building Full Stack Apps',
       description: 'Teaching modern web development techniques'
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1633118948215-480c9d78fc24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwbWVldGluZyUyMG9mZmljZXxlbnwxfHx8fDE3NjU1OTM2ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      src: Dev1,
       title: 'Team Collaboration',
       description: 'Working with amazing developers on exciting projects'
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1706759755789-66d39fd252b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXZlbnQlMjBuZXR3b3JraW5nfGVufDF8fHx8MTc2NTY5NTM5NHww&ixlib=rb-4.1.0&q=80&w=1080',
+      src: Dev2,
       title: 'Tech Meetup',
       description: 'Networking with fellow developers and tech enthusiasts'
     }

@@ -15,11 +15,11 @@ export function Mentorship() {
   };
 
   const offerings = [
-    {
-      icon: Code,
-      title: '1-on-1 Coding Sessions',
-      description: 'Personalized coding sessions focusing on your specific challenges and learning goals.'
-    },
+    // {
+    //   icon: Code,
+    //   title: '1-on-1 Coding Sessions',
+    //   description: 'Personalized coding sessions focusing on your specific challenges and learning goals.'
+    // },
     {
       icon: BookOpen,
       title: 'Code Review & Feedback',
@@ -35,16 +35,16 @@ export function Mentorship() {
       title: 'Project Collaboration',
       description: 'Work together on real projects to build your portfolio and gain practical experience.'
     },
-    {
-      icon: MessageSquare,
-      title: 'Interview Preparation',
-      description: 'Mock interviews and technical interview practice to help you land your dream job.'
-    },
-    {
-      icon: UserCheck,
-      title: 'Skill Development',
-      description: 'Structured learning paths to master new technologies and frameworks.'
-    }
+    // {
+    //   icon: MessageSquare,
+    //   title: 'Interview Preparation',
+    //   description: 'Mock interviews and technical interview practice to help you land your dream job.'
+    // },
+    // {
+    //   icon: UserCheck,
+    //   title: 'Skill Development',
+    //   description: 'Structured learning paths to master new technologies and frameworks.'
+    // }
   ];
 
   const testimonials = [
@@ -100,7 +100,7 @@ export function Mentorship() {
         </div>
 
         {/* Testimonials */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h3 className="text-center mb-8">Success Stories</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
@@ -118,10 +118,10 @@ export function Mentorship() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Contact Form */}
-        <div className="max-w-2xl mx-auto">
+        {/* <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="mb-3">Interested in Mentorship?</h3>
             <p className="text-slate-400">
@@ -182,7 +182,7 @@ export function Mentorship() {
               Book a Session
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   );

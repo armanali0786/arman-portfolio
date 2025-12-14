@@ -39,7 +39,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-400 mb-1">Email</p>
-                  <p className="text-slate-300">jonathan.doe@example.com</p>
+                  <p className="text-slate-300">armanali.shaikh77@gmail.com</p>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-400 mb-1">Phone</p>
-                  <p className="text-slate-300">+1 (555) 123-4567</p>
+                  <p className="text-slate-300">+91 7319977276</p>
                 </div>
               </div>
 
@@ -59,7 +59,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-400 mb-1">Location</p>
-                  <p className="text-slate-300">San Francisco, CA</p>
+                  <p className="text-slate-300">Indira Nagar, Bengaluru , Karnatak</p>
                 </div>
               </div>
             </div>
@@ -68,29 +68,33 @@ export function Contact() {
               <p className="text-slate-400 mb-4 text-sm">Follow me on social media</p>
               <div className="flex gap-3">
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/arman-ali-8383081ab/" 
+                  target='_blank'
                   className="w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 hover:bg-red-600/10 transition-colors"
                 >
                   <Linkedin size={20} className="text-slate-300" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://github.com/armanali0786/" 
+                  target='_blank' 
                   className="w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 hover:bg-red-600/10 transition-colors"
                 >
                   <Github size={20} className="text-slate-300" />
                 </a>
-                <a 
-                  href="#" 
+                {/* <a 
+                  href="https://www.linkedin.com/in/arman-ali-8383081ab/" 
+                  target='_blank' 
                   className="w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 hover:bg-red-600/10 transition-colors"
                 >
                   <Twitter size={20} className="text-slate-300" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/arman-ali-8383081ab/" 
+                  target='_blank' 
                   className="w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 hover:bg-red-600/10 transition-colors"
                 >
                   <Mail size={20} className="text-slate-300" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -125,7 +129,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                   className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-red-500 transition-colors"
-                  placeholder="your.email@example.com"
+                  placeholder="abcd@gmail.com"
                 />
               </div>
 

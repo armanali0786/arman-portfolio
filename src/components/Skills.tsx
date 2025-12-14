@@ -5,32 +5,32 @@ export function Skills() {
     {
       icon: Code2,
       title: 'Frontend Development',
-      items: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS']
+      items: ['React.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS','Bootstrap']
     },
     {
       icon: Server,
       title: 'Backend Development',
-      items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'Python', 'Java']
+      items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'Java']
     },
     {
       icon: Database,
       title: 'Database',
-      items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase', 'Supabase']
+      items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase']
     },
     {
       icon: Layout,
       title: 'UI/UX Design',
-      items: ['Figma', 'Adobe XD', 'Responsive Design', 'User Research', 'Prototyping', 'Wireframing']
+      items: ['Figma', 'Responsive Design', 'User Research', 'Prototyping', 'Wireframing']
     },
-    {
-      icon: Smartphone,
-      title: 'Mobile Development',
-      items: ['React Native', 'Progressive Web Apps', 'Mobile-First Design', 'Cross-Platform']
-    },
+    // {
+    //   icon: Smartphone,
+    //   title: 'Mobile Development',
+    //   items: ['React Native', 'Progressive Web Apps', 'Mobile-First Design', 'Cross-Platform']
+    // },
     {
       icon: Palette,
       title: 'Tools & Others',
-      items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile', 'Testing']
+      items: ['AWS EC2', 'AWS S3', 'Git', 'BitBucket', 'Postman']
     }
   ];
 

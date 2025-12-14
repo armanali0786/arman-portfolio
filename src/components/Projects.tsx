@@ -3,37 +3,53 @@ import { ExternalLink, Github } from 'lucide-react';
 export function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard. Built with React, Node.js, and MongoDB.',
+      title: 'Solar Panel Installation',
+      description: 'Developed a 3D map rendering, using Three.js to create location-based house models with roof structures, enabling solar panel installation, placement, and energy output calculations.',
       image: 'https://images.unsplash.com/photo-1687524690542-2659f268cde8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDF8fHx8MTc2NTU1MjI4Nnww&ixlib=rb-4.1.0&q=80&w=1080',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      tags: ['React.js', 'Javascript', 'Typescript', 'Three.js', 'GoogleApi'],
       github: '#',
       live: '#'
     },
     {
-      title: 'Mobile Fitness App',
-      description: 'Cross-platform fitness tracking app with workout plans, progress tracking, and social features. Developed using React Native and Firebase.',
+      title: 'LinkedIn Profile Review Extension',
+      description: 'Developed a Chrome extension web application integrating LinkedIn API for user authentication, profile reviews with ratings, and market insights visualization.',
       image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzY1NjE0MTk4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      tags: ['React Native', 'Firebase', 'TypeScript', 'Redux'],
+      tags: ['React.js', 'Javascript', 'TypeScript', 'Redux', 'Chrome extension'],
       github: '#',
       live: '#'
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'Real-time analytics dashboard with data visualization, reporting, and insights. Features interactive charts and customizable widgets.',
+      title: 'HomeCare360',
+      description: 'A one-stop platform for finding, booking, and reviewing local service providers like plumbers, electricians, cleaners, landscapers, and more.',
       image: 'https://images.unsplash.com/photo-1759752394755-1241472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1NjUxNTA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      tags: ['React', 'D3.js', 'PostgreSQL', 'Express'],
-      github: '#',
-      live: '#'
+      tags: ['React.js', 'Javascript', 'Typescript', 'Node.js', 'ExpressJs', 'MongoDB'],
+      github: 'https://github.com/armanali0786/homecare360',
+      live: 'https://homecare360.netlify.app'
     },
     {
-      title: 'Portfolio Builder',
-      description: 'A drag-and-drop portfolio builder that helps developers and designers create stunning portfolio websites without coding.',
+      title: 'DeliveryPoint',
+      description: 'Design and developed websites features such as food listing with quick delivery options within 30 minutes, showcasing top-rated restaurants, and enabling robust search capabilities for food items and restaurants.',
       image: 'https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc2NTY0Njk2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
-      tags: ['React', 'Tailwind CSS', 'Next.js', 'Supabase'],
+      tags: ['React.js', 'Javascript', 'Typescript', 'Node.js', 'ExpressJs', 'MongoDB', 'Stripe', 'Google DialogFlow'],
+      github: 'https://github.com/armanali0786/delivery-point.git',
+      live: 'https://delivery-point.netlify.app'
+    },
+    {
+      title: '405Live',
+      description: 'Developed a user-friendly platform for accessing information on upcoming events, including event details, venue information, and event locations, user authentication and advanced search functionality, events, filtered events,venues events, favourites. ',
+      image: 'https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc2NTY0Njk2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+      tags: ['React.js', 'Javascript', 'Typescript'],
       github: '#',
+      live: 'https://405live.com'
+    },
+    {
+      title: 'Expert English Spoken',
+      description: 'Developed a user-friendly English spoken coaching website, offering interactive lessons, personalized learning paths, and real-time feedback.',
+      image: 'https://images.unsplash.com/photo-1759752394755-1241472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1NjUxNTA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      tags: ['React.js', 'Javascript', 'Typescript'],
+      github: 'https://github.com/armanali0786/expert-english-spoken.git',
       live: '#'
-    }
+    },
   ];
 
   return (
@@ -88,6 +104,7 @@ export function Projects() {
                   </a>
                   <a 
                     href={project.live}
+                    target='_blank'
                     className="flex items-center gap-2 text-slate-300 hover:text-red-500 transition-colors text-sm"
                   >
                     <ExternalLink size={18} />

@@ -3,49 +3,56 @@ import { GraduationCap, Award } from 'lucide-react';
 export function Education() {
   const education = [
     {
-      degree: 'Master of Science in Computer Science',
-      institution: 'Stanford University',
-      period: '2017 - 2019',
+      degree: 'Bachelor of Engineering',
+      institution: 'Marwadi Education Foundations Group Of Institutions',
+      period: '2019 - 2023',
       description: 'Specialized in Web Technologies and Software Engineering. Graduated with honors.',
       highlights: [
-        'GPA: 3.9/4.0',
-        'Research on Progressive Web Applications',
-        'Teaching Assistant for Web Development course'
+        'CGPA: 8.62/10',
       ]
     },
     {
-      degree: 'Bachelor of Science in Software Engineering',
-      institution: 'University of California, Berkeley',
-      period: '2013 - 2017',
-      description: 'Comprehensive study of software development, algorithms, and system design.',
+      degree: 'Higher Secondary Education',
+      institution: 'Shrikant Babu Bindu Singh Degree College',
+      period: '2017 - 2019',
+      description: 'I focus on completing coursework, preparing for board exams, and exploring potential career paths.',
       highlights: [
-        'GPA: 3.7/4.0',
-        'Dean\'s List all semesters',
-        'President of Computer Science Club'
+        'Percentile: 71.8 %',
+      ]
+    },
+    {
+      degree: 'Secondary School Education',
+      institution: 'Jay Ram Prasad Tiwari High School',
+      period: '2016 - 2017',
+      description: 'I strive to excel academically, engage in extracurricular activities, and make decisions about their future educational endeavors.',
+      highlights: [
+        'Percentile: 61.9 %',
       ]
     }
   ];
 
   const certifications = [
     {
-      name: 'AWS Certified Solutions Architect',
+      name: 'Amazon EC2 Basics',
       issuer: 'Amazon Web Services',
       year: '2023'
     },
     {
-      name: 'Professional Scrum Master I',
-      issuer: 'Scrum.org',
+      name: 'Database Programming with SQL',
+      issuer: 'Oracle Academy',
+      year: '2020'
+    },
+    {
+      name: 'Data Structures & Algorithm',
+      issuer: 'Coding Ninjas',
       year: '2022'
+
     },
     {
-      name: 'Google UX Design Professional',
-      issuer: 'Google',
-      year: '2021'
-    },
-    {
-      name: 'Meta Front-End Developer',
-      issuer: 'Meta',
-      year: '2021'
+      name: 'OOPS in Java',
+      issuer: 'Great Learning',
+      year: '2023'
+
     }
   ];
 
