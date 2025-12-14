@@ -242,7 +242,7 @@ export function Projects() {
 
         >
           <button
-            className="absolute top-6 right-6 w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 transition-colors"
+            className="absolute top-6 right-6 w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 transition-colors cursor-pointer"
             onClick={closeModal}
 
           >

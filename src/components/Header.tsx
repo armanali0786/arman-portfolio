@@ -23,27 +23,27 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-white transition-colors cursor-pointer">
               About
             </button>
-            <button onClick={() => scrollToSection('skills')} className="text-slate-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('skills')} className="text-slate-300 hover:text-white transition-colors cursor-pointer">
               Skills
             </button>
-            <button onClick={() => scrollToSection('projects')} className="text-slate-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('projects')} className="text-slate-300 hover:text-white transition-colors cursor-pointer">
               Projects
             </button>
-            <button onClick={() => scrollToSection('experience')} className="text-slate-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('experience')} className="text-slate-300 hover:text-white transition-colors cursor-pointer">
               Experience
             </button>
-            <button onClick={() => scrollToSection('mentorship')} className="text-slate-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('mentorship')} className="text-slate-300 hover:text-white transition-colors cursor-pointer">
               Mentorship
             </button>
-            <button onClick={() => scrollToSection('gallery')} className="text-slate-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('gallery')} className="text-slate-300 hover:text-white transition-colors cursor-pointer">
               Gallery
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="px-5 py-2 bg-red-600 hover:bg-red-700 rounded-full transition-colors"
+              className="px-5 py-2 bg-red-600 hover:bg-red-700 rounded-full transition-colors cursor-pointer"
             >
               Contact
             </button>
@@ -61,27 +61,27 @@ export function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pt-4 border-t border-slate-800 flex flex-col gap-4">
-            <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-white transition-colors text-left">
+            <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-left">
               About
             </button>
-            <button onClick={() => scrollToSection('skills')} className="text-slate-300 hover:text-white transition-colors text-left">
+            <button onClick={() => scrollToSection('skills')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-left">
               Skills
             </button>
-            <button onClick={() => scrollToSection('projects')} className="text-slate-300 hover:text-white transition-colors text-left">
+            <button onClick={() => scrollToSection('projects')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-left">
               Projects
             </button>
-            <button onClick={() => scrollToSection('experience')} className="text-slate-300 hover:text-white transition-colors text-left">
+            <button onClick={() => scrollToSection('experience')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-left">
               Experience
             </button>
-            <button onClick={() => scrollToSection('mentorship')} className="text-slate-300 hover:text-white transition-colors text-left">
+            <button onClick={() => scrollToSection('mentorship')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-left">
               Mentorship
             </button>
-            <button onClick={() => scrollToSection('gallery')} className="text-slate-300 hover:text-white transition-colors text-left">
+            <button onClick={() => scrollToSection('gallery')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-left">
               Gallery
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="px-5 py-2 bg-red-600 hover:bg-red-700 rounded-full transition-colors text-left"
+              className="px-5 py-2 bg-red-600 hover:bg-red-700 rounded-full transition-colors cursor-pointer text-left"
             >
               Contact
             </button>
