@@ -218,6 +218,7 @@ export function Projects() {
                     <Github size={18} />
                     Code
                   </a> */}
+                   {index >= 2 && (
                   <a
                     href={project.live}
                     target='_blank'
@@ -227,6 +228,7 @@ export function Projects() {
                     <ExternalLink size={18} />
                     Live Demo
                   </a>
+                   )}
                 </div>
               </div>
             </div>
