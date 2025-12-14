@@ -1,4 +1,6 @@
 import MyImage from '../styles/images/my-image.jpeg'
+import { Mail, Linkedin, Github, Twitter, MapPin, Phone } from 'lucide-react';
+
 export function About() {
   return (
     <section id="about" className="pt-32 pb-20 px-6">
@@ -33,13 +35,30 @@ export function About() {
           </div>
           <div className="flex justify-center">
             <div className="w-full max-w-md aspect-square bg-slate-800 rounded-2xl overflow-hidden">
-              <img 
-                src={MyImage} 
+              <img
+                src={MyImage}
                 alt="Arman Ali"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
+        </div>
+        <div className="flex gap-3 mt-4">
+          <a
+            href="https://www.linkedin.com/in/arman-ali-8383081ab/"
+            target='_blank'
+            className="w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 hover:bg-red-600/10 transition-colors"
+          >
+            <Linkedin size={20} className="text-slate-300" />
+          </a>
+          <a
+            href="https://github.com/armanali0786/"
+            target='_blank'
+            className="w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center hover:border-red-500 hover:bg-red-600/10 transition-colors"
+          >
+            <Github size={20} className="text-slate-300" />
+          </a>
+
         </div>
       </div>
     </section>
