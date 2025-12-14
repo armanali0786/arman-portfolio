@@ -136,7 +136,7 @@ export function Projects() {
       ],
       tags: ['React.js', 'Javascript', 'Typescript'],
       github: 'https://github.com/armanali0786/expert-english-spoken.git',
-      live: '#'
+      live: 'https://expert-english-spoken.netlify.app/'
     },
   ];
 
