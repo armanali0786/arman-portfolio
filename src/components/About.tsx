@@ -9,7 +9,7 @@ export function About() {
           <div>
             <h2 className="text-red-500 mb-4">About Me</h2>
             <p className="text-slate-300 leading-relaxed mb-6">
-              Hi, I'm Arman Ali, a passionate Spftware developer with a focus on clean, user-friendly designs and effective problem-solving. I specialize in React.js, JavaScript, TypeScript, Node.js, and modern web technologies.
+              Hi, I'm Arman Ali, a passionate Full Stack Developer with a focus on clean, user-friendly designs and effective problem-solving. I specialize in React.js, JavaScript, TypeScript, Node.js, and modern web technologies.
             </p>
             <p className="text-slate-300 leading-relaxed">
               I believe in building websites that are not only visually appealing but also highly functional and easy to navigate. My goal is to create digital experiences that solve real problems and delight users.

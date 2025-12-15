@@ -18,7 +18,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-white mb-1 text-4xl font-bold">Arman Ali</h1>
-            <p className="text-sm text-slate-400">Software Developer | Full Stack Developer | Problem Solver</p>
+            <p className="text-sm text-slate-400">Full Stack Developer</p>
           </div>
 
           {/* Desktop Navigation */}
