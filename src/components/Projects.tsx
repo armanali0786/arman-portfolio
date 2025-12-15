@@ -42,6 +42,21 @@ import EnglishImage4 from '../styles/english/image4.png';
 import EnglishImage5 from '../styles/english/image5.png';
 import EnglishImage6 from '../styles/english/image6.png';
 
+import PropertyImage1 from '../styles/property/image1.png';
+import PropertyImage2 from '../styles/property/image2.png';
+import PropertyImage3 from '../styles/property/image3.png';
+import PropertyImage4 from '../styles/property/image4.png';
+import PropertyImage5 from '../styles/property/image5.png';
+import PropertyImage6 from '../styles/property/image6.png';
+import PropertyImage7 from '../styles/property/image7.png';
+import PropertyImage8 from '../styles/property/image8.png';
+import PropertyImage9 from '../styles/property/image9.png';
+import PropertyImage10 from '../styles/property/image10.png';
+import PropertyImage11 from '../styles/property/image11.png';
+import PropertyImage12 from '../styles/property/image12.png';
+
+
+
 
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -75,6 +90,28 @@ export function Projects() {
       tags: ['React.js', 'Javascript', 'TypeScript', 'Redux', 'Chrome extension'],
       github: '#',
       live: '#'
+    },
+    {
+      title: 'ExcelProp',
+      description: 'A user-friendly properties web app that allows users to browse, search, and filter real estate listings, view detailed property information, and contact sellers or agents for inquiries and bookings.',
+      images: [
+        PropertyImage1,
+        PropertyImage2,
+        PropertyImage3,
+        PropertyImage4,
+        PropertyImage5,
+        PropertyImage6,
+        PropertyImage7,
+        PropertyImage8,
+        PropertyImage9,
+        PropertyImage10,
+        PropertyImage11,
+        PropertyImage12,
+
+      ],
+      tags: ['React.js', 'Javascript', 'TypeScript', 'Redux'],
+      github: '#',
+      live: 'https://excelprop.netlify.app'
     },
     {
       title: 'HomeCare360',
