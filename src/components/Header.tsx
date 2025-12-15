@@ -17,8 +17,8 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-white mb-1 text-4xl font-bold">Arman Ali</h1>
-            <p className="text-sm text-slate-400">Full Stack Developer</p>
+            <h1 className="text-white mb-1 text-4xl font-bold" style={{fontSize:"20px", fontWeight:"bold"}}>Arman Ali</h1>
+            <p className="text-sm text-slate-400" style={{fontSize:"16px"}}>Full Stack Developer</p>
           </div>
 
           {/* Desktop Navigation */}
